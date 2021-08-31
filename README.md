@@ -339,3 +339,25 @@ Time complexity : O(NlogN)
 
 > Sort, Unique(erase duplicates), and use lower_bound function to get idx's order compared to other elements
 
+
+<br><br/>
+
+
+## Parametric Search
+
+**[Make it non-decision problem or find lower bound](https://marades.tistory.com/m/7)**
+
+When you find lower bound index :
+```
+while (left < right)
+ {
+   mid = (left+right) / 2;
+   if (arr[mid] < target)
+     left = mid+1;
+   else right = mid; // this is the part where differnce is made with binary search
+ }
+return right;
+```
+
+
+
