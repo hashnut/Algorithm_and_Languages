@@ -330,5 +330,9 @@ Time complexity : O(NlogN)
 <br><br/>
 
 
+## Coordinates Compression
 
+**[When input data value is large and the number of data is comparatively small](https://torbjorn.tistory.com/274)**
+
+> Sort, Unique(erase duplicates), and use lower_bound function to get idx's order compared to other elements
 
