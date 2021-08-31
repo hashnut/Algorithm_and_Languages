@@ -3,10 +3,86 @@
 
 <br><br/>
 
+### ToDo
+- [ ] Segment Tree (DS+)
+- [ ] HLD (DS+)
+- [ ] BIT (DS+)
+- [X] Ranged Sum Optimization (DP)
+
+
+<br><br/>
+
 # Online solving website
 - [LeetCode](https://leetcode.com/)
 - [BAEKJOON](https://www.acmicpc.net/)
 - [Samsung SW Expert Academy](https://swexpertacademy.com/main/main.do)
+
+<br><br/>
+
+# Data Structures+
+
+**Focusing mainly on tree sturctures and more**
+
+<br><br/>
+
+## Index Tree
+
+**[Used for getting 'ranged sum' in O(logN) time](https://hanbi97.tistory.com/m/336)**
+>  **Step 1 (init)** : if there is `n` data, set tree size `4n` -> calculate offset and fill all the data into leaf node
+>  **Step 2 (query)** : Set `left` and `right` index -> `if (left % 2 == 0) left /= 2; else {sum += arr[left]; left++;}`. Same analogy for `right` index, until `left == right`
+
+
+<br><br/>
+
+
+## BIT (Binary Indexed Tree, Fenwick Tree)
+
+**[Find 'ranged sum' with less spatial complexity](https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/)**
+
+
+
+<br><br/>
+
+
+## Segment Tree
+
+**[Find 'ranged sum' and update the tree efficiently](https://www.acmicpc.net/blog/view/9)**
+
+[Lazy propagation](https://rebro.kr/94)
+
+
+
+<br><br/>
+
+
+## HLD (Heavy-Light Decomposition)
+
+**[Divide tree with chain so that you can use them as 1D array](https://www.secmem.org/blog/2019/12/12/HLD/)**
+
+
+<br><br/>
+
+
+
+## Union-Find
+
+**[Used for tree-style disjoint set](https://gmlwjd9405.github.io/2018/08/31/algorithm-union-find.html)**
+>  **Path compression** `find(int a)` : `parent[a] = find(parent[a])`
+>  
+>  **Weighted union-find using rank** : `if (rank[a] == rank[b]) {rank[a]++}`
+
+
+
+<br><br/>
+
+
+---
+
+<br><br/>
+
+# Graph
+
+Graph algorithms, including `shortest distance` and `MST`
 
 <br><br/>
 
@@ -31,26 +107,6 @@ Time complexity :
 Time complexity : 
  1. O(V+E) : When adjacency list is used
  2. O(V^2) : When adjacency matrix is used
-
-
-
-<br><br/>
-
-
-## Union-Find
-
-**[Used for tree-style disjoint set](https://gmlwjd9405.github.io/2018/08/31/algorithm-union-find.html)**
->  **Path compression** `find(int a)` : `parent[a] = find(parent[a])`
->  
->  **Weighted union-find using rank** : `if (rank[a] == rank[b]) {rank[a]++}`
-
-
-<br><br/>
-
-
-# Graph
-
-Graph algorithms, including `shortest distance` and `MST`
 
 <br><br/>
 
@@ -157,14 +213,9 @@ Time complexity : O(V+E)
 
 <br><br/>
 
-
-## HLD (Heavy-Light Decomposition)
-
-**[Divide tree with chain so that you can use them as 1D array](https://www.secmem.org/blog/2019/12/12/HLD/)**
-
+---
 
 <br><br/>
-
 
 # Dyanamic Programming
 
@@ -220,7 +271,29 @@ for (int i = 0; i < sizeof(arr)/sizeof(*arr); i++)
 
 Time complexity : O(NlogN)
 
+
 <br><br/>
+
+
+
+## Ranged Sum Optimization
+
+**[Find 'ranged sum' in O(1)]()**
+>  Initialize `sum[]` array, where `sum[i]` is sum prefixed sum of `arr[1~i]`
+>  If you want to get sum from `st` to `end`, return `sum[end] - sum[st-1]`
+
+**[Update 'ranged values' in O(1)]()**
+> **Step 1 (Init)** : Initialize `B[i] = A[i]-A[i-1]` array, then `A[i] = B[1] + B[2] ... + B[i]`
+> **Step 2 (Update)** : If you add `v` from `st` to `end` in `A[]`, then `B[st] += v` && `B[end+1] -= v`
+> **Step 3 (Calc)** : Update whole `A[]` using `B[]` and return `A[chosen]` -> O(1) for each query
+
+<br><br/>
+
+
+---
+
+<br><br/>
+
 
 ## Extended Euclidean Algorithm
 
