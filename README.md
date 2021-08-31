@@ -108,6 +108,9 @@ Time complexity :
  1. O(V+E) : When adjacency list is used
  2. O(V^2) : When adjacency matrix is used
 
+**[Euler Tour Technique](https://david0506.tistory.com/55)** : Traverse tree with in-order, index nodes with visited order and index nodes again when they get out from DFS
+> If certain nodes value is (3, 8), then its child nodes are (3, x1), (4, x2), ... (8, x6)
+
 <br><br/>
 
 ## Dijkstra 
