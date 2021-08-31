@@ -1,5 +1,5 @@
 # Coding_Algorithm
- Algorithms for Coding test and more (including src codes for various problems)
+ Algorithms & Codes for Coding test and more (including src codes for various problems)
 
 <br><br/>
 
