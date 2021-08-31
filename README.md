@@ -133,7 +133,7 @@ Time complexity : O(ElogE or ElogV)
 ## LCA (Lowest-Common-Ancestor)
 
 **[Find lowest node that has both v and w as descendants, wheere we define each node to be a descendant of itself](https://kibbomi.tistory.com/m/201)**
-> **Step 1 (Depths)** : DFS or BFS to update depths and `parent[0][a]`(2^0 the parent of `a`)
+> **Step 1 (Depths)** : DFS or BFS to update depths and `parent[0][a]`(`2^0`th parent of `a`)
 > 
 > **Step 2 (Connect)** : Update parent information
 > 
