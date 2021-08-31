@@ -321,6 +321,11 @@ Time complexity : O(NlogN)
 > Starting from `i = 2`, set `arr[idx]=0` when `idx % i == 0` (But not itself)
 > 
 > Print all remaining numbers where `arr[idx] != 0`
+>
+
+[You can reduce space using bitmask](https://suhwanc.tistory.com/88) (e.g. use 32bit integer as single array element, where each bit represent it is a prime or not)
+ 
+
 
 <br><br/>
 
