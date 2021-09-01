@@ -4,7 +4,7 @@
 <br><br/>
 
 ### ToDo
-- [ ] Segment Tree (DS+)
+- [X] Segment Tree (DS+)
 - [ ] HLD (DS+)
 - [ ] BIT (DS+)
 - [X] Ranged Sum Optimization (DP)
@@ -47,6 +47,7 @@
 ## Segment Tree
 
 **[Find 'ranged sum' and update the tree efficiently](https://www.acmicpc.net/blog/view/9)**
+> Find ranged sum and update node value recursively
 
 [Lazy propagation](https://rebro.kr/94)
 
