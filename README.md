@@ -263,6 +263,7 @@ Time complexity : O(V+E)
 > 
 > If last < n, `C[count+1] = n`, else `C[i] = n`, where `C[i-1] < n <= C[i]`
 
+- For legnth :
 ```
 for (int i = 0; i < sizeof(arr)/sizeof(*arr); i++)
 {
@@ -272,6 +273,9 @@ for (int i = 0; i < sizeof(arr)/sizeof(*arr); i++)
   {int idx = lower_bound(C, C+count, arr[i]) - C; C[idx] = arr[i]}
 }
 ```
+
+- [How to get actual LIS](https://rebro.kr/33)
+  : Store values in index array, and find them backward
 
 Time complexity : O(NlogN)
 
