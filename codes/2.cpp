@@ -2,9 +2,6 @@
  * 
  * 레퍼런스는 정의 시에 반드시 누구의 별명인지 명시해야 한다
  *
- *
- *
- *
  */
 #include <iostream>
 
@@ -72,6 +69,7 @@ int main()
 	const int& f = function();
 	std::cout << "c : " << c << endl;
 	
+
 	return 0;
 
 
