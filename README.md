@@ -9,5 +9,8 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 
 + Can't assign literals with reference, but with `const int &ref = 4` is allowed. When used as function's return type, it vanishes as the function returns, but const, such as `const int& f = function()` can extend return value's lifespan
 
-### [4. Object Oriented Programming]()
+### 4. Object Oriented Programming
+
+[What is class? It's a template to create an instance](https://github.com/hashnut/CPP_Review/blob/main/codes/4-1.cpp). [You should know about function overloading(with type conversion issue), and constructor(also default constructor).]()
+
 
