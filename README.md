@@ -112,6 +112,9 @@ Time complexity :
 **[Euler Tour Technique](https://david0506.tistory.com/55)** : Traverse tree with in-order, index nodes with visited order and index nodes again when they get out from DFS
 > If certain nodes value is (3, 8), then its child nodes are (3, x1), (4, x2), ... (8, x6)
 
+**[How to find cycle in the graph](https://kesakiyo.tistory.com/15)**
+> We can find if is there a cycle by checking 'back edge' in O(V+E)
+
 <br><br/>
 
 ## Dijkstra 
