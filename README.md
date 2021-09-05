@@ -1,5 +1,5 @@
 # CPP Review
-> CPP Review following lectures frome [here](https://modoocode.com/135)
+> CPP Review following lectures from [here](https://modoocode.com/135), Effective C++ and Effective Modern C++.
 >
 > Also cover other references & codes
 
