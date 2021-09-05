@@ -14,5 +14,5 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 [What is class? It's a template used to create an instance](https://github.com/hashnut/CPP_Review/blob/main/codes/4-1.cpp). 
 + [You should know about function overloading(with type conversion issue), and constructor(also default constructor).](https://github.com/hashnut/CPP_Review/blob/main/codes/4-2.cpp)
 + [Note there is also `default copy constructor` in c++, but don't forget to free memories like `char*` type!](https://github.com/hashnut/CPP_Review/blob/main/codes/4-3.cpp)
-
++ [static variable in class : class shares identical variable. static function : class shares identical function. `static` type variable/function does not belong to `object`, but `class`]()
 
