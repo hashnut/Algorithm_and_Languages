@@ -6,4 +6,9 @@ public class TopLevelClass {
 		System.out.println(outer.outerField);
 		System.out.println(OuterClass2.staticOuterField);
 	}
+	
+	public static void main(String... args)
+	{
+		System.out.println("Check");
+	}
 }
