@@ -13,7 +13,7 @@ public class ShadowTest {
         }
     }
 
-    public static void main(String... args) {
+    public static void main(String[] args) {
         ShadowTest st = new ShadowTest();
         ShadowTest.FirstLevel fl = st.new FirstLevel();
         fl.methodInFirstLevel(23);
