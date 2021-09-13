@@ -41,6 +41,6 @@ Local classes are classes that are defined in a block. A local class has access 
 
 In addition, a local class has access to local variables. Starting in Java SE 8, a local class can access local variables and parameters of the enclosing block that are final or *effectively* final. *Effectively* final means its value is unchanged after initialization.
 
-Local classes are similiar to inner classes(cannot define/declare any static members). [You cannot declare interface inside a block, since interface is inherently static.](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/interface_static.java)
+Local classes are similiar to inner classes([cannot define/declare any static members, except *final*](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/only_final_in_local_static.java)). [You cannot declare interface inside a block, since interface is inherently static.](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/interface_static.java)
 
 
