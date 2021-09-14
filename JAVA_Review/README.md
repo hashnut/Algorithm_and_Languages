@@ -49,7 +49,7 @@ Local classes are similiar to inner classes([cannot define/declare any static me
 
 <br></br>
 
-### [**Further readings are uploaded on the blog**](https://iamfoodie.tistory.com/category/Tutorials/Java)
+### [**Further readings are uploaded on the blog!**](https://iamfoodie.tistory.com/category/Tutorials/Java)
 
 
 
