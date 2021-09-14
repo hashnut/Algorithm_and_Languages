@@ -47,4 +47,7 @@ In addition, a local class has access to local variables. Starting in Java SE 8,
 
 Local classes are similiar to inner classes([cannot define/declare any static members, except *final*](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/only_final_in_local_static.java)). [You cannot declare interface inside a block, since interface is inherently static.](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/interface_static.java)
 
+[**Further readings are uploaded on the blog**](https://iamfoodie.tistory.com/category/Tutorials/Java)
+
+
 
