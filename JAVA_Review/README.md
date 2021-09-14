@@ -48,12 +48,12 @@ Local classes are similiar to inner classes([cannot define/declare any static me
 
 <br></br>
 
-### [**Further readings are uploaded on the blog!**](https://iamfoodie.tistory.com/category/Tutorials/Java)
+## [**Further readings are uploaded on the blog!**](https://iamfoodie.tistory.com/category/Tutorials/Java)
 
-### [5. JAVA Reference type](https://koreanfoodie.me/635)
+#### [5. JAVA Reference type](https://koreanfoodie.me/635)
 
-### [6-1. Static : static method, static initialization block, Singleton](https://koreanfoodie.me/636)
-### [6-2. Package : Java Package](https://koreanfoodie.me/638)
-### [6-3. Annotation : Java Annotation](https://koreanfoodie.me/639)
+#### [6-1. Static : static method, static initialization block, Singleton](https://koreanfoodie.me/636)
+#### [6-2. Package : Java Package](https://koreanfoodie.me/638)
+#### [6-3. Annotation : Java Annotation](https://koreanfoodie.me/639)
 
 
