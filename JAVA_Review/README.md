@@ -3,6 +3,7 @@ Review Java with 'Effective Java' and 'Optimizing Java'
 
 Reference : [1. A Tour of Java](https://github.com/hashnut/JAVA_Review/blob/main/java_article_merged.pdf), [2. Oracle Docs](https://docs.oracle.com/javase/tutorial/java/TOC.html), [3. This is JAVA](http://www.yes24.com/Product/Goods/15651484)
 
+## [JAVA Reference type](https://koreanfoodie.me/635)
 
 # Classes
 
@@ -18,6 +19,9 @@ Class contains members and methods.
 ### [static](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/TopLevelClass.java)
 
 *static* members and methods should be accessed through *class* itself, not instances. (It is unique!) **Class methods cannot directly access to instance variables and methods**
+
+- [Singleton and static block](https://koreanfoodie.me/636)
+- [JAVA Package](https://koreanfoodie.me/638)
 
 ### [Nested Classes](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/OuterClass2.java)
 
