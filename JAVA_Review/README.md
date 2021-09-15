@@ -57,6 +57,6 @@ Local classes are similiar to inner classes([cannot define/declare any static me
 #### [6-2. Package : Java Package](https://koreanfoodie.me/638)
 #### [6-3. Annotation : Java Annotation](https://koreanfoodie.me/639)
 #### [7. Inheritance : Type casting and polymorphism](https://iamfoodie.tistory.com/640)
-#### [8. Java Interface and Declaration](https://iamfoodie.tistory.com/641)
+#### [8-1. Java Interface and Declaration](https://iamfoodie.tistory.com/641)
 #### [8-2. Java Interface Inheritance and Default Method](https://iamfoodie.tistory.com/manage/posts/)
 
