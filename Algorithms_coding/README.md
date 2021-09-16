@@ -240,7 +240,7 @@ Time complexity : O(V+E)
 > 
 > **Fractional Knapsack** : (Greedy) Sort items in descending order according to values and fill the bag
 > 
-> **LCS (Value)** : If `left[i] == right[j]` than `res[i][j] = res[i-1][j-1] + 1`, if not same, `res[i][j] = max(res[i-1][j], res[i][j-1]`
+> **LCS (Value)** : If `left[i] == right[j]` then `res[i][j] = res[i-1][j-1] + 1`, if not same, `res[i][j] = max(res[i-1][j], res[i][j-1])`
 > 
 > **LCS (String)** : Using `res[]` in the above, start from `res[n][m]` to `res[0][0]`, add character when `left[i] == right[j]`
 
