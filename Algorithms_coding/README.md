@@ -113,7 +113,7 @@ Time complexity :
 > If certain nodes value is (3, 8), then its child nodes are (3, x1), (4, x2), ... (8, x6)
 
 **[How to find cycle in the graph](https://kesakiyo.tistory.com/15)**
-> We can find if is there a cycle by checking 'back edge' in O(V+E)
+> We can find if is there a cycle by checking 'back edge' in O(V+E). [Stack Version Code](https://github.com/hashnut/Algorithms_and_Languages/blob/main/Algorithms_coding/src/snippet/check_cycle_stack.cpp)
 
 <br><br/>
 
@@ -240,7 +240,7 @@ Time complexity : O(V+E)
 > 
 > **Fractional Knapsack** : (Greedy) Sort items in descending order according to values and fill the bag
 > 
-> **LCS (Value)** : If `left[i] == right[j]` than `res[i][j] = res[i-1][j-1] + 1`, if not same, `res[i][j] = max(res[i-1][j], res[i][j-1]`
+> **LCS (Value)** : If `left[i] == right[j]` then `res[i][j] = res[i-1][j-1] + 1`, if not same, `res[i][j] = max(res[i-1][j], res[i][j-1])`
 > 
 > **LCS (String)** : Using `res[]` in the above, start from `res[n][m]` to `res[0][0]`, add character when `left[i] == right[j]`
 

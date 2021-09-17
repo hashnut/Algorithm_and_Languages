@@ -1,8 +1,9 @@
 # JAVA_Review
 Review Java with 'Effective Java' and 'Optimizing Java'
 
-Reference : [1. A Tour of Java](https://github.com/hashnut/JAVA_Review/blob/main/java_article_merged.pdf), [2. Oracle Docs](https://docs.oracle.com/javase/tutorial/java/TOC.html)
+Reference : [1. A Tour of Java](https://github.com/hashnut/JAVA_Review/blob/main/java_article_merged.pdf), [2. Oracle Docs](https://docs.oracle.com/javase/tutorial/java/TOC.html), [3. This is JAVA](http://www.yes24.com/Product/Goods/15651484)
 
+<br></br>
 
 # Classes
 
@@ -18,6 +19,9 @@ Class contains members and methods.
 ### [static](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/TopLevelClass.java)
 
 *static* members and methods should be accessed through *class* itself, not instances. (It is unique!) **Class methods cannot directly access to instance variables and methods**
+
+- [Singleton and static block](https://koreanfoodie.me/636)
+- [JAVA Package](https://koreanfoodie.me/638)
 
 ### [Nested Classes](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/OuterClass2.java)
 
@@ -43,4 +47,17 @@ In addition, a local class has access to local variables. Starting in Java SE 8,
 
 Local classes are similiar to inner classes([cannot define/declare any static members, except *final*](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/only_final_in_local_static.java)). [You cannot declare interface inside a block, since interface is inherently static.](https://github.com/hashnut/JAVA_Review/blob/main/oracle_classes/src/interface_static.java)
 
+<br></br>
+
+## [**Further readings are uploaded on the blog!**](https://iamfoodie.tistory.com/category/Tutorials/Java)
+
+#### [5. JAVA Reference type](https://koreanfoodie.me/635)
+
+#### [6-1. Static : static method, static initialization block, Singleton](https://koreanfoodie.me/636)
+#### [6-2. Package : Java Package](https://koreanfoodie.me/638)
+#### [6-3. Annotation : Java Annotation](https://koreanfoodie.me/639)
+#### [7. Inheritance : Type casting and polymorphism](https://iamfoodie.tistory.com/640)
+#### [8-1. Java Interface and Declaration](https://iamfoodie.tistory.com/641)
+#### [8-2. Java Interface Inheritance and Default Method](https://iamfoodie.tistory.com/manage/posts/)
+#### [9-1. Java Nested Classes and Nested Interfaces](https://iamfoodie.tistory.com/644)
 
