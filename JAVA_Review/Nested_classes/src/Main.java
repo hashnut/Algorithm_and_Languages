@@ -4,5 +4,10 @@ public class Main {
 		Window w = new Window();
 		w.button1.touch();
 		w.button2.touch();
+		
+		while(true)
+		{
+			System.out.println("1");
+		}
 	}
 }
