@@ -52,8 +52,9 @@ class A_1
 
 public class A {
 
-	
-	
-	
+	interface I
+	{
+		void method();
+	}
 	
 }
