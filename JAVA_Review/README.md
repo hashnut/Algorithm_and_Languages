@@ -8,13 +8,13 @@ Reference : [1. A Tour of Java](https://github.com/hashnut/JAVA_Review/blob/main
 ## [**Further readings are uploaded on the blog!**](https://iamfoodie.tistory.com/category/Tutorials/Java)
 
 #### [5. JAVA Reference type](https://koreanfoodie.me/635)
-
 #### [6-1. Static : static method, static initialization block, Singleton](https://koreanfoodie.me/636)
 #### [6-2. Package : Java Package](https://koreanfoodie.me/638)
 #### [6-3. Annotation : Java Annotation](https://koreanfoodie.me/639)
 #### [7. Inheritance : Type casting and polymorphism](https://iamfoodie.tistory.com/640)
 #### [8-1. Java Interface and Declaration](https://iamfoodie.tistory.com/641)
 #### [8-2. Java Interface Inheritance and Default Method](https://iamfoodie.tistory.com/manage/posts/)
+#### [9-0. Java Class Basics](https://github.com/hashnut/Algorithms_and_Languages/edit/main/JAVA_Review/oracle_classes/README.md)
 #### [9-1. Java Nested Classes and Nested Interfaces](https://iamfoodie.tistory.com/644)
 #### [9-2. Java Anonymous class](https://koreanfoodie.me/645)
 #### [10-1. Java Exception : Multiple catch](https://koreanfoodie.me/646)
