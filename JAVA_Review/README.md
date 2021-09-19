@@ -60,4 +60,7 @@ Local classes are similiar to inner classes([cannot define/declare any static me
 #### [8-1. Java Interface and Declaration](https://iamfoodie.tistory.com/641)
 #### [8-2. Java Interface Inheritance and Default Method](https://iamfoodie.tistory.com/manage/posts/)
 #### [9-1. Java Nested Classes and Nested Interfaces](https://iamfoodie.tistory.com/644)
-
+#### [9-2. Java Anonymous class](https://koreanfoodie.me/645)
+#### [10-1. Java Exception : Multiple catch](https://koreanfoodie.me/646)
+#### [10-2. Java Exception : Resource AutoClose, throws](https://koreanfoodie.me/647)
+#### [10-3. Java Exception : User defined Exception](https://koreanfoodie.me/648)
