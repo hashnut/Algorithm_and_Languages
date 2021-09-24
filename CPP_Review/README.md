@@ -17,3 +17,4 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 + [static variable in class : class shares identical variable. static function : class shares identical function. `static` type variable/function does not belong to `object`, but `class`]()
 
 ### 5. Operator Overloading
+[Operator Overloading : Basics](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-1.cpp)
