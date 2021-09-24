@@ -114,6 +114,25 @@ double Complex::get_number(const char* str, int from, int to) const {
 
     return num;
 }
+
+double Complex::get_number2(const char* str, int from, int to) const {
+    
+    double n = 0.0;
+    bool negative = false;
+
+    if (str[from] == '-') negative = true;
+    if (str[from] == '-' || str[from] == '+') from++;
+ 
+    char* buf = new char[to-from+2];
+    memcpy(buf, &str[from], to - from + 1);
+    buf[to-from+1] = '\0';
+
+    n = atof(buf);
+
+    if (negative) n *= -1;
+
+    return n;
+}
 Complex Complex::operator+(const Complex& c) const {
     Complex temp(real + c.real, img + c.img);
     return temp;
