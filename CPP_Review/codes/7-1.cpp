@@ -18,3 +18,25 @@
 
 
 */
+
+#include <iostream>
+
+
+using namespace std;
+int main() {
+	int t;
+	while (true) {
+		std::cin >> t;
+		// 'c'를 입력했을 경우, 무한루프가 돈다...
+		// failbit가 켜지고, 입력값을 받지 않고 리턴해버리기 때문! 
+		std::cout << "입력 :: " << t << std::endl;
+		if (t == 0) break;
+	}
+
+	while (std::cin >> t) {
+		// 'c'를 입력했을 경우, 종료한다.
+		std::cout << "입력 :: " << t << std::endl;
+		if (t == 0) break;
+	}
+
+}
