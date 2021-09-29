@@ -11,21 +11,21 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 
 ### 4. Object Oriented Programming
 
-[What is class? It's a template used to create an instance](https://github.com/hashnut/CPP_Review/blob/main/codes/4-1.cpp). 
-+ [You should know about function overloading(with type conversion issue), and constructor(also default constructor).](https://github.com/hashnut/CPP_Review/blob/main/codes/4-2.cpp)
-+ [Note there is also `default copy constructor` in c++, but don't forget to free memories like `char*` type!](https://github.com/hashnut/CPP_Review/blob/main/codes/4-3.cpp)
-+ [static variable in class : class shares identical variable. static function : class shares identical function. `static` type variable/function does not belong to `object`, but `class`]()
+- [1. What is class? It's a template used to create an instance](https://github.com/hashnut/CPP_Review/blob/main/codes/4-1.cpp). 
++ [2. You should know about function overloading(with type conversion issue), and constructor(also default constructor).](https://github.com/hashnut/CPP_Review/blob/main/codes/4-2.cpp)
++ [3. Note there is also `default copy constructor` in c++, but don't forget to free memories like `char*` type!](https://github.com/hashnut/CPP_Review/blob/main/codes/4-3.cpp)
++ [4. static variable in class : class shares identical variable. static function : class shares identical function. `static` type variable/function does not belong to `object`, but `class`](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/4-4.cpp)
 
 ### 5. Operator Overloading
-[Operator Overloading : Basics](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-1.cpp)
-[IO, Operator++, Type Casting](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-2.cpp)
-[Operator[] Overloading with Nth-Dim Array (Difficult)](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-3.cpp)
+- [1. Operator Overloading : Basics](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-1.cpp)
+- [2. IO, Operator++, Type Casting](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-2.cpp)
+- [3. Operator[] Overloading with Nth-Dim Array (Difficult)](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-3.cpp)
 
 ### 6. Inheritance and Virtual Functions
-[C++ String & Inheritance](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-1.cpp)
-[Virtual Functions and Polymorphism](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-2.cpp)
-[Virtual Functions and Miscellaneous](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-3.cpp)
+- [1. C++ String & Inheritance](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-1.cpp)
+- [2. Virtual Functions and Polymorphism](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-2.cpp)
+- [3. Virtual Functions and Miscellaneous](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-3.cpp)
 
 ### 7. C++ IO
-[istream, ostream](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/7-1.cpp)
-[ifstream, ofstream, stringstream]()
+- [1. istream, ostream](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/7-1.cpp)
+- [2. ifstream, ofstream, stringstream]()
