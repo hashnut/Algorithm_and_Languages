@@ -18,3 +18,14 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 
 ### 5. Operator Overloading
 [Operator Overloading : Basics](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-1.cpp)
+[IO, Operator++, Type Casting](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-2.cpp)
+[Operator[] Overloading with Nth-Dim Array (Difficult)](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/5-3.cpp)
+
+### 6. Inheritance and Virtual Functions
+[C++ String & Inheritance](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-1.cpp)
+[Virtual Functions and Polymorphism](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-2.cpp)
+[Virtual Functions and Miscellaneous](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/6-3.cpp)
+
+### 7. C++ IO
+[istream, ostream](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/7-1.cpp)
+[ifstream, ofstream, stringstream]()
