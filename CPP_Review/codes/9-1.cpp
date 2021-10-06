@@ -21,7 +21,23 @@
         4. bool의 경우 : 
         template <>
         class test<bool> { // 원하는 코드 };
-        
+
+
+    Sort를 하는데 오름차순이 아닌 내림차순으로 하고 싶다면..?
+        1. sort 함수 자체를 바꾼다 -> C를 배운다면 이렇게...
+        2. struct / class 타입 내부에서 operator overloading -> 나쁘지 않은 방법
+        3. 함수 객체 (Functor)를 사용 -> C++를 배운다면 이렇게! 복잡도 관리나 시간 측면에서 더욱 우수한 방식
+
+
+    타입이 아닌 템플릿 인자 (non-type template arguments)
+        템플릿 인자로 타입만 받을 수 있는 것이 아니다!
+
+        template <typename T, int num = 5> // = 을 사용해 디폴트 인자를 설정할 수 있다.
+        T add_num(T t) {
+            return t + num;
+        }
+        add_num<int, 5>(3); 
+        add_num<int>(3); // 위와 같은 결과값. Thanks to default template argument
 
 
 */
@@ -29,6 +45,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <array>
 
 template <typename T>
 class Vector {
@@ -70,6 +87,12 @@ public:
 
     // 현재 벡터의 크기를 구한다.
     int size() { return length; }
+
+    void swap(int i, int j) {
+        T temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+    }
 
     ~Vector() {
         if (data) {
@@ -115,10 +138,72 @@ public:
         length++;
 
     }
+
+    bool operator[](int i) { return (data[i / 32] & (1 << (i % 32))) != 0; }
+
+
+    void remove(int x) {
+        for (int i = x + 1; i < length; i++) {
+            int prev = i - 1;
+            int curr = i;
+
+            if (data[curr / 32] & (1 << (curr % 32))) {
+                data[prev / 32] |= (1 << (prev % 32));
+            }
+            else {
+                unsigned int all_ones_except_prev = 0xFFFFFFFF;
+                all_ones_except_prev ^= (1 << (prev % 32));
+                data[prev / 32] &= all_ones_except_prev;
+            }
+        }
+        length--;
+    }
+
+    int size() { return length; }
+
+    ~Vector() {
+        if (data) {
+            delete[] data;
+        }
+    }
 };
+
+template <typename T>
+T max(T& a, T& b) {
+    return a > b ? a : b;
+}
+
+template <typename Cont, typename Comp>
+
+void bubble_sort(Cont& cont, Comp& comp) {
+    for (int i = 0; i < cont.size(); i++) {
+        for (int j = i + 1; j < cont.size(); j++) {
+            if (!comp(cont[i], cont[j])) {
+                cont.swap(i, j);
+            }
+        }
+    }
+}
+
+struct Comp1 {
+    bool operator()(int a, int b) { return a > b; }
+};
+
+struct Comp2 {
+    bool operator()(int a, int b) { return a < b; }
+};
+
+template <typename T, int num>
+T add_num(T t) {
+    return t + num;
+}
+
 
 
 int main() {
+    Vector < Vector<int>> vec_2d;
+
+
     // int 를 보관하는 벡터를 만든다.
     Vector<int> int_vec;
     int_vec.push_back(3);
@@ -134,4 +219,37 @@ int main() {
     std::cout << "-------- std::string vector -------" << std::endl;
     std::cout << "첫번째 원소 : " << str_vec[0] << std::endl;
     std::cout << "두번째 원소 : " << str_vec[1] << std::endl;
+
+    Vector<bool> bool_vec;
+    bool_vec.push_back(true);
+    bool_vec.push_back(true);
+    bool_vec.push_back(false);
+    bool_vec.push_back(false);
+    bool_vec.push_back(false);
+    bool_vec.push_back(true);
+    bool_vec.push_back(false);
+    bool_vec.push_back(true);
+    bool_vec.push_back(false);
+    bool_vec.push_back(true);
+    bool_vec.push_back(false);
+    bool_vec.push_back(true);
+    bool_vec.push_back(false);
+    bool_vec.push_back(true);
+    bool_vec.push_back(false);
+    bool_vec.push_back(true);
+    bool_vec.push_back(false);
+
+    std::cout << "-------- bool vector ---------" << std::endl;
+    for (int i = 0; i < bool_vec.size(); i++) {
+        std::cout << bool_vec[i];
+    }
+    std::cout << std::endl;
+
+    Comp1 comp1;
+    bubble_sort(int_vec, comp1);
+
+    Comp2 comp2;
+    bubble_sort(int_vec, comp2);
+
+
 }
