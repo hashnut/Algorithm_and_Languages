@@ -34,4 +34,10 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 
 
 
-### 9. ...
+### 9. C++ Templates
+- [1. C++ Template](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/9-1.cpp)
+- [2. Variadic Template](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/9-2.cpp)
+- [3. ]()
+- [4. ]()
+
+
