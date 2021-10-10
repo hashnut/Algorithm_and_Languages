@@ -1,8 +1,25 @@
 /*
+
     9-3 : 템플릿 메타 프로그래밍 (Template Meta programming)
     
     템플릿 메타 프로그래밍으로 작성된 코드는 모두 컴파일 타임에 모든 연산이 끝난다.
     즉, 프로그램 실행 속도를 향상시킬 수 있다는 장점이 있다(컴파일 타임은 늘어남)
+
+
+    컴파일러는 기본적으로 인자를 '값'으로 인식한다.
+    그러므로 애해한 경우 타입을 받아야 한다면 반드시 typename을 명시해 주어야 한다.
+
+    template<typename a, typename b>
+    struct test<a, typename something<a, b>::result> {
+        static const result = ...;
+    }
+
+
+    단위(Unit) 라이브러리 : 
+    템플릿 메타 프로그래밍은 단위 계산에 강점을 보인다! 
+
+
+
 */
 
 #include <iostream>
@@ -68,20 +85,57 @@ struct gcd<M, 0> {
     static const int result = M;
 };
 
-template <int N, int D = 1>
-struct Ratio {
-    typedef Ratio<N, D> type; // pointing itself -> similar to 'this' in class
-    static const int num = N;
-    static const int den = D;
+template <int X, int Y>
+struct GCD {
+  static const int value = GCD<Y, X % Y>::value;
 };
 
+template <int X>
+struct GCD<X, 0> {
+  static const int value = X;
+};
+
+template <int N, int D = 1>
+struct Ratio {
+ private:
+  const static int _gcd = GCD<N, D>::value;
+
+ public:
+  typedef Ratio<N / _gcd, D / _gcd> type;
+  static const int num = N / _gcd;
+  static const int den = D / _gcd;
+};
 template <class R1, class R2>
 struct _Ratio_add {
-    typedef Ratio<R1::num * R2::den + R2::num * R1::den, R1::den * R2::den> type;
+  using type = Ratio<R1::num * R2::den + R2::num * R1::den, R1::den * R2::den>;
 };
 
 template <class R1, class R2>
 struct Ratio_add : _Ratio_add<R1, R2>::type {};
+
+template <class R1, class R2>
+struct _Ratio_subtract {
+  using type = Ratio<R1::num * R2::den - R2::num * R1::den, R1::den * R2::den>;
+};
+
+template <class R1, class R2>
+struct Ratio_subtract : _Ratio_subtract<R1, R2>::type {};
+
+template <class R1, class R2>
+struct _Ratio_multiply {
+  using type = Ratio<R1::num * R2::num, R1::den * R2::den>;
+};
+
+template <class R1, class R2>
+struct Ratio_multiply : _Ratio_multiply<R1, R2>::type {};
+
+template <class R1, class R2>
+struct _Ratio_divide {
+  using type = Ratio<R1::num * R2::den, R1::den * R2::num>;
+};
+
+template <class R1, class R2>
+struct Ratio_divide : _Ratio_divide<R1, R2>::type {};
 
 
 template<int N>
@@ -99,6 +153,8 @@ struct fib<2> {
     static const int result = 1;
 };
 
+/*
+
 template<int N, int M>
 struct _is_prime {
     static const bool result = ((N % M) ? false : true) || _is_prime<N, M-1>::result;
@@ -113,6 +169,103 @@ template<int N>
 struct is_prime {
     static const bool result = !(_is_prime<N, static_cast<int>(sqrt(N))>::result); 
 };
+
+*/
+
+template <int N>
+struct INT {
+    static const int num = N;
+};
+
+template <typename a, typename b>
+struct add2 {
+    typedef INT<a::num + b::num> result;
+};
+
+template <typename a, typename b>
+struct divide {
+    typedef INT<a::num / b::num> result;
+};
+
+using one = INT<1>;
+using two = INT<2>;
+using three = INT<3>;
+
+template <typename N, typename d>
+struct check_div {
+    static const bool result =
+        (N::num % d::num == 0) || check_div<N, typename add2<d, one>::result>::result;
+};
+
+template <typename N>
+struct _is_prime {
+    static const bool result = !check_div<N, two>::result;
+};
+
+template <>
+struct _is_prime<two> {
+    static const bool result = true;
+};
+
+template <>
+struct _is_prime<three> {
+    static const bool result = true;
+};
+
+template <typename N>
+struct check_div<N, typename divide<N, two>::result> {
+    static const bool result = (N::num % (N::num / 2) == 0);
+};
+
+
+template <int N>
+struct is_prime {
+    static const bool result = _is_prime<INT<N>>::result;
+};
+
+template <typename U, typename V, typename W>
+struct Dim {
+  using M = U;
+  using L = V;
+  using T = W;
+
+  using type = Dim<M, L, T>;
+};
+
+template <typename U, typename V>
+struct add_dim_ {
+  typedef Dim<typename Ratio_add<typename U::M, typename V::M>::type,
+              typename Ratio_add<typename U::L, typename V::L>::type,
+              typename Ratio_add<typename U::T, typename V::T>::type>
+      type;
+};
+
+template <typename U, typename V>
+struct subtract_dim_ {
+  typedef Dim<typename Ratio_subtract<typename U::M, typename V::M>::type,
+              typename Ratio_subtract<typename U::L, typename V::L>::type,
+              typename Ratio_subtract<typename U::T, typename V::T>::type>
+      type;
+};
+
+template <typename T, typename D>
+struct quantity {
+  T q;
+  using dim_type = D;
+
+  quantity operator+(quantity<T, D> quant) {
+    return quantity<T, D>(q + quant.q);
+  }
+
+  quantity operator-(quantity<T, D> quant) {
+    return quantity<T, D>(q - quant.q);
+  }
+
+  quantity(T q) : q(q) {}
+};
+
+
+
 
 int main() {
 
@@ -129,9 +282,9 @@ int main() {
     typedef Int<1> one;
     typedef Int<2> two;
 
-    typedef add<one, two>::result three;
+    //typedef add<one, two>::result three;
 
-    std::cout << "Addition result : " << three::num << std::endl;
+    //std::cout << "Addition result : " << three::num << std::endl;
 
 
     // 간단한 팩토리얼 예제
