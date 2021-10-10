@@ -1,4 +1,18 @@
+/*
+
+  9-4 : 템플릿 메타 프로그래밍 (Template Meta programming)
+  
+  auto 키워드를 쓰면 타입을 알아서 추측하도록 만들 수 있다!  
+
+
+
+
+
+*/
+
 #include <iostream>
+#include <typeinfo>
+
 
 template <int X, int Y>
 struct GCD {
@@ -90,31 +104,53 @@ struct quantity {
     return quantity<T, D>(q - quant.q);
   }
 
+  template <typename D2>
+  quantity<T, typename add_dim_<D, D2>::type> operator*(quantity<T, D2> quant) {
+    return quantity<T, typename add_dim_<D, D2>::type>(q * quant.q);
+  }
+
+  template <typename D2>
+  quantity<T, typename subtract_dim_<D, D2>::type> operator/(quantity<T, D2> quant) {
+    return quantity<T, typename subtract_dim_<D, D2>::type>(q / quant.q);
+  }
+
+  quantity<T, D> operator*(T scalar) { return quantity<T, D>(q * scalar); }
+  quantity<T, D> operator/(T scalar) { return quantity<T, D>(q / scalar); }
+
+
   quantity(T q) : q(q) {}
 };
 
-template <typename D2>
-quantity<T, typename add_dim_<D, D2>::type> operator*(quantity<T, D2> quant) {
-  return quantity<T, typename add_dim_<D, D2>::type>(q * quant.q);
+
+
+
+
+int sum(int a, int b) { return a + b; }
+
+class SomeClass {
+  int data;
+
+ public:
+  SomeClass(int d) : data(d) {}
+  SomeClass(const SomeClass& s) : data(s.data) {}
+};
+
+
+template <typename T, typename D>
+std::ostream& operator<<(std::ostream& out, const quantity<T, D>& q) {
+  out << q.q << "kg^" << D::M::num / D::M::den << "m^" << D::L::num / D::L::den
+    << "s^" << D::T::num / D::T::den;
+
+    return out;
 }
-
-template <typename D2>
-quantity<T, typename subtract_dim_<D, D2>::type> operator/(quantity<T, D2> quant) {
-  return quantity<T, typename subtract_dim_<D, D2>::type>(q / quant.q);
-}
-
-quantity<T, D> operator*(T scalar) { return quantity<T, D>(q * scalar); }
-quantity<T, D> operator/(T scalar) { return quantity<T, D>(q / scalar); }
-
-
 
 
 int main() {
   using one = Ratio<1, 1>;
   using zero = Ratio<0, 1>;
 
-  quantity<double, Dim<one, zero, zero>> kg(1);
-  quantity<double, Dim<zero, one, zero>> meter(1);
+  quantity<double, Dim<one, zero, zero>> kg(2);
+  quantity<double, Dim<zero, one, zero>> meter(3);
   quantity<double, Dim<zero, zero, one>> second(1);
 
   // Good
@@ -122,4 +158,23 @@ int main() {
 
   // Bad
   //kg + meter;
+
+
+  auto c = sum(1, 2);  // 함수 리턴 타입으로 부터 int 라고 추측 가능
+  auto num = 1.0 + 2.0;  // double 로 추측 가능!
+
+  SomeClass some(10);
+  auto some2 = some;
+
+  auto some3(10);  // SomeClass 객체를 만들까요?
+
+  std::cout << "c 의 타입은? :: " << typeid(c).name() << std::endl;
+  std::cout << "num 의 타입은? :: " << typeid(num).name() << std::endl;
+  std::cout << "some2 의 타입은? :: " << typeid(some2).name() << std::endl;
+  std::cout << "some3 의 타입은? :: " << typeid(some3).name() << std::endl;
+
+  auto F = kg * meter / (second * second);
+  std::cout << "2 kg 물체를 3m/s^2 의 가속도로 밀기 위한 힘의 크기는? " << F
+  << std::endl;
+
 }
