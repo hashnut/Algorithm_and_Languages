@@ -32,6 +32,15 @@
 
 
 	원소 수정하기 (transform)
+		transform (시작 반복자, 끝 반복자, 결과를 저장할 컨테이너의 시작 반복자, Pred)
+
+	
+	원소를 탐색하는 함수(find, find_if, any_of, all_of 등등)
+		container에 자체 find 함수가 있다면 그걸 이용하자! (더 빠름)
+		algorithm의 find함수는 타입을 모르므로, O(N)이다.	
+		any_of : 인자로 받은 범위 안의 모든 원소들 중 조건을 하나라도 충족하면 true
+		all_of : 모든 원소들이 전부 조건을 충족해야 true
+	
 
 */
 
@@ -116,6 +125,40 @@ public:
 	}
 };
 
+struct Gamer {
+	std::string name;
+	int level;
+
+	Gamer(std::string name, int level) : name(name), level(level) {}
+	bool operator==(const Gamer& gamer) const {
+		if (name == gamer.name && level == gamer.level) return true;
+		return false;
+	}
+};
+
+class Party {
+	std::vector<Gamer> gamers;
+
+public:
+	bool add_gamer(std::string name, int level) {
+		Gamer new_gamer(name, level);
+		if (std::find(gamers.begin(), gamers.end(), new_gamer) != gamers.end()) {
+			return false;
+		}
+		gamers.push_back(new_gamer);
+		return true;
+	}
+
+	bool can_join_dungeon() {
+		return std::all_of(gamers.begin(), gamers.end(),
+			[](Gamer& gamer) { return gamer.level >= 15; });
+	}
+
+	bool can_use_special_item() {
+		return std::any_of(gamers.begin(), gamers.end(),
+			[](Gamer& gamer) { return gamer.level >= 19; });
+	}
+};
 
 int main() {
 
@@ -154,4 +197,23 @@ int main() {
 			}), vec.end());
 
 	print(vec.begin(), vec.end());
+
+	std::transform(vec.begin(), vec.end(), vec.begin(),
+		[](int i) { return i + 1; });
+	print(vec.begin(), vec.end());
+
+
+	auto result = std::find(vec.begin(), vec.end(), 3);
+	std::cout << "3 은 " << std::distance(vec.begin(), result) + 1 << " 번째 원소"
+		<< std::endl;
+
+
+	Party party;
+	party.add_gamer("철수", 15);
+	party.add_gamer("영희", 18);
+	party.add_gamer("민수", 12);
+	party.add_gamer("수빈", 19);
+
+	std::cout << std::boolalpha;
+
 }
