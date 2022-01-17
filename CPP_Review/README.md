@@ -55,4 +55,8 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 - [1. Rvalue Reference and move constructor](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/12-1.cpp)
 - [2. Move semantics, perfect forwarding, and universal reference ](https://koreanfoodie.me/807)
 
+### 13. Smart Pointer
+- [1. unique_ptr](https://koreanfoodie.me/840)
+- [2. shared_ptr, weak_ptr](https://koreanfoodie.me/842)
+
 
