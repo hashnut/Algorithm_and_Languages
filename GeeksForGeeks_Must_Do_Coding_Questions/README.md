@@ -4,9 +4,11 @@
 
 My solution file is added as '[src]()' at the end of the topic
 
+<br></br>
 ---
+<br></br>
 
-****Topics :**  
+**Topics :**  
 1. [Graph](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo1)  
 2. [Linked List](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo2)  
 3. [Dynamic Programming](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo3)  
@@ -15,7 +17,7 @@ My solution file is added as '[src]()' at the end of the topic
 6. [Number Theory](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo6)  
 7. [BIT Manipulation](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo7)  
 8. [String / Array](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo8)  
-**
+
 
 **Graph**
 
