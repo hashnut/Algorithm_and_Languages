@@ -37,7 +37,8 @@
 
 5. [To detect cycle in a Graph \*\*Union Find\*\*](https://www.geeksforgeeks.org/union-find/)  
 
-6. [Minimum Spanning tree \*\*Prim\*\*](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)  
+6. [Minimum Spanning tree \*\*Prim\*\*](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/) 
+
 7. [Minimum Spanning tree \*\*Kruskal\*\*](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)  
 
 8. [Topological Sort](https://www.geeksforgeeks.org/topological-sorting/)  
@@ -137,6 +138,7 @@
 7. [Remove nodes on root to leaf paths of length < K](https://www.geeksforgeeks.org/remove-nodes-root-leaf-paths-length-k/)  
 
 8. [Lowest Common Ancestor in a Binary Search Tree](https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/)  
+
 9. [Check if a binary tree is subtree of another binary tree](https://www.geeksforgeeks.org/check-binary-tree-subtree-another-binary-tree-set-2/)  
 
 10. [Reverse alternate levels of a perfect binary tree](https://www.geeksforgeeks.org/reverse-alternate-levels-binary-tree/)
