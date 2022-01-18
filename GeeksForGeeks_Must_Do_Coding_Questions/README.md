@@ -4,9 +4,7 @@
 ### My solution file is added as '[src]()' at the end of the topic
 -   Difficulty Level : [Medium](https://www.geeksforgeeks.org/medium/)
 
-<br></br>
 ---
-<br></br>
 
 **Topics :**  
 1. [Graph](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo1)  
