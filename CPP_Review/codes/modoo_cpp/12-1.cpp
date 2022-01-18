@@ -44,6 +44,8 @@ MyString::MyString(MyString&& str) noexcept {
 	str.string_content = nullptr;
 }
 
+MyString::~MyString() { if (string_content) delete[] string_content;}
+
 int main() {
 
 	int a;
