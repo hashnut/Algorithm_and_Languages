@@ -1,273 +1,126 @@
-Must Do Coding Questions for Companies like Amazon, Microsoft, Adobe, …
-Difficulty Level : Medium﻿
-Last Updated : 06 Dec, 2021
-As the placement season is back so are we to help you ace the interview. We have selected some most commonly asked and must do practice problems for you.
-
-You can also take part in our mock placement contests which will help you learn different topics and practice at the same time, simulating the feeling of a real placement test environment.
-
-Note : Now you can track your progress of these questions Must Do Interview Preparation Course.
-
-Preparing for Prouct-Based Companies ? Check Out Must Do Coding Questions for Product Based Companies
- 
-Topic :
-
-Arrays
-String
-Linked List
-Stack and Queue
-Tree and BST
-Heap
-Recursion
-Hashing
-Graph
-Greedy
-Dynamic Programming
-Divide and Conquer
-Backtracking
-Bit Magic
+# Top 10 algorithms in Interview Questions
 
 
+### My solution file is added as '[src]()' at the end of the topic
+-   Difficulty Level : [Medium](https://www.geeksforgeeks.org/medium/)
 
- 
+---
 
-Arrays
-Subarray with given sum
-Count the triplets
-Kadane’s Algorithm
-Missing number in array
-Merge two sorted arrays
-Rearrange array alternatively
-Number of pairs
-Inversion of Array
-Sort an array of 0s, 1s and 2s
-Equilibrium point
-Leaders in an array
-Minimum Platforms
-Reverse array in groups
-K’th smallest element
-Trapping Rain Water
-Pythagorean Triplet
-Chocolate Distribution Problem
-Stock buy and sell
-Element with left side smaller and right side greater
-Convert array into Zig-Zag fashion
-Last Index of 1
-Spirally traversing a matrix
-Largest Number formed from an Array
-Solved the above? Go for some more Questions
+**Topics :**  
+1. [Graph](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo1)  
+2. [Linked List](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo2)  
+3. [Dynamic Programming](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo3)  
+4. [Sorting And Searching](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo4)  
+5. [Tree / Binary Search Tree](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo5)  
+6. [Number Theory](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo6)  
+7. [BIT Manipulation](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo7)  
+8. [String / Array](https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/#algo8)  
 
-String
-Reverse words in a given string
-Permutations of a given string
-Longest Palindrome in a String
-Recursively remove all adjacent duplicates
-Check if string is rotated by two places
-Roman Number to Integer
-Anagram
-Remove Duplicates
-Form a Palindrome
-Longest Distinct Characters in the string
-Implement Atoi
-Implement strstr
-Longest Common Prefix
-Solved the above? Go for some more Questions
 
-Linked List
-Finding middle element in a linked list
-Reverse a linked list
-Rotate a Linked List
-Reverse a Linked List in groups of given size
-Intersection point in Y shaped linked lists
-Detect Loop in linked list
-Remove loop in Linked List
-n’th node from end of linked list
-Flattening a Linked List
-Merge two sorted linked lists
-Intersection point of two Linked Lists
-Pairwise swap of a linked list
-Add two numbers represented by linked lists
-Check if Linked List is Palindrome
-Implement Queue using Linked List
-Implement Stack using Linked List
-Given a linked list of 0s, 1s and 2s, sort it
-Delete without head pointer
-Stack and Queue
-Parenthesis Checker
-Next larger element
-Queue using two Stacks
-Stack using two queues
-Get minimum element from stack
-LRU Cache
-Circular tour
-First non-repeating character in a stream
-Rotten Oranges
-Maximum of all subarrays of size k
-Tree
-Print Left View of Binary Tree
-Check for BST
-Print Bottom View of Binary Tree
-Print a Binary Tree in Vertical Order
-Level order traversal in spiral form
-Connect Nodes at Same Level
-Lowest Common Ancestor in a BST
-Convert a given Binary Tree to Doubly Linked List
-Write Code to Determine if Two Trees are Identical or Not
-Given a binary tree, check whether it is a mirror of itself
-Height of Binary Tree
-Maximum Path Sum
-Diameter of a Binary Tree
-Number of leaf nodes
-Check if given Binary Tree is Height Balanced or Not
-Serialize and Deserialize a Binary Tree
-Solved the above? Go for some more Questions
+**Graph**
 
-Heap
-Find median in a stream
-Heap Sort
-Operations on Binary Min Heap
-Rearrange characters
-Merge K sorted linked lists
-Kth largest element in a stream
-Recursion
-Flood fill Algorithm
-Number of paths
-Combination Sum – Part 2
-Special Keyboard
-Josephus problem
-Hashing
-Relative Sorting
-Sorting Elements of an Array by Frequency
-Largest subarray with 0 sum
-Common elements
-Find all four sum numbers
-Swapping pairs make sum equal
-Count distinct elements in every window
-Array Pair Sum Divisibility Problem
-Longest consecutive subsequence
-Array Subset of another array
-Find all pairs with a given sum
-Find first repeated character
-Zero Sum Subarrays
-Minimum indexed character
-Check if two arrays are equal or not
-Uncommon characters
-Smallest window in a string containing all the characters of another string
-First element to occur k times
-Check if frequencies can be equal
-Graph
-Depth First Traversal
-Breadth First Traversal
-Detect cycle in undirected graph
-Detect cycle in a directed graph
-Topological sort
-Find the number of islands
-Implementing Dijkstra
-Minimum Swaps
-Strongly Connected Components
-Shortest Source to Destination Path
-Find whether path exist
-Minimum Cost Path
-Circle of Strings
-Floyd Warshall
-Alien Dictionary
-Snake and Ladder Problem
-Greedy
-Activity Selection
-N meetings in one room
-Coin Piles
-Maximize Toys
-Page Faults in LRU
-Largest number possible
-Minimize the heights
-Minimize the sum of product
-Huffman Decoding
-Minimum Spanning Tree
-Shop in Candy Store
-Geek collects the balls
-Dynamic Programming
-Minimum Operations
-Max length chain
-Minimum number of Coins
-Longest Common Substring
-Longest Increasing Subsequence
-Longest Common Subsequence
-0 – 1 Knapsack Problem
-Maximum sum increasing subsequence
-Minimum number of jumps
-Edit Distance
-Coin Change Problem
-Subset Sum Problem
-Box Stacking
-Rod Cutting
-Path in Matrix
-Minimum sum partition
-Count number of ways to cover a distance
-Egg Dropping Puzzle
-Optimal Strategy for a Game
-Shortest Common Supersequence
-Divide and Conquer
-Find the element that appears once in sorted array
-Search in a Rotated Array
-Binary Search
-Sum of Middle Elements of two sorted arrays
-Quick Sort
-Merge Sort
-K-th element of two sorted Arrays
-Backtracking
-N-Queen Problem
-Solve the Sudoku
-Rat in a Maze Problem
-Word Boggle
-Generate IP Addresses
-Bit Magic
-Find first set bit
-Rightmost different bit
-Check whether K-th bit is set or not
-Toggle bits given range
-Set kth bit
-Power of 2
-Bit Difference
-Rotate Bits
-Swap all odd and even bits
-Count total set bits
-Longest Consecutive 1’s
-Sparse Number
-Alone in a couple
-Maximum subset XOR
-Some More Questions on Arrays
-Find Missing And Repeating
-Maximum Index
-Consecutive 1’s not allowed
-Majority Element
-Two numbers with sum closest to zero
-Nuts and Bolts Problem
-Boolean Matrix Problem
-Smallest Positive missing number
-Jumping Caterpillars
-Some More Questions on Strings
-Most frequent word in an array of strings
-CamelCase Pattern Matching
-String Ignorance
-Smallest window in a string containing all the characters of another string
-Design a tiny URL or URL shortener
-Permutations of a given string
-Non Repeating Character
-Check if strings are rotations of each other or not
-Save Ironman
-Repeated Character
-Remove common characters and concatenate
-Geek and its Colored Strings
-Second most repeated string in a sequence
-Some more Questions on Trees
-Mirror Tree
-Longest consecutive sequence in Binary tree
-Bottom View of Binary Tree
-Lowest Common Ancestor in a Binary Tree
-Binary to DLL
-Important Links :
+1. [Breadth First Search (BFS)](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)  
+2. [Depth First Search (DFS)](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)  
+3. [Shortest Path from source to all vertices \*\*Dijkstra\*\*](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)  
+4. [Shortest Path from every vertex to every other vertex \*\*Floyd Warshall\*\*](https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/)  
+5. [To detect cycle in a Graph \*\*Union Find\*\*](https://www.geeksforgeeks.org/union-find/)  
+6. [Minimum Spanning tree \*\*Prim\*\*](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)  
+7. [Minimum Spanning tree \*\*Kruskal\*\*](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)  
+8. [Topological Sort](https://www.geeksforgeeks.org/topological-sorting/)  
+9. [Boggle (Find all possible words in a board of characters)](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/)  
+10. [Bridges in a Graph](https://www.geeksforgeeks.org/bridge-in-a-graph/)
 
-Difficulty-wise ordered Coding questions for Interview and Competitive Programming
-Aptitude questions asked in round 1 : Placements Course designed for this purpose.
-MCQs asked from different computer science subjects : Subject-Wise Quizzes
-Interview theory and coding questions of all companies : Company wise all practice questions.
-Interview experiences of all companies : Interview corner.
+**Linked List**
+
+1. [Insertion of a node in Linked List (On the basis of some constraints)](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/)  
+2. [Delete a given node in Linked List (under given constraints)](https://www.geeksforgeeks.org/delete-a-given-node-in-linked-list-under-given-constraints/)  
+3. [Compare two strings represented as linked lists](https://www.geeksforgeeks.org/compare-two-strings-represented-as-linked-lists/)  
+4. [Add Two Numbers Represented By Linked Lists](https://www.geeksforgeeks.org/sum-of-two-linked-lists/)  
+5. [Merge A Linked List Into Another Linked List At Alternate Positions](https://www.geeksforgeeks.org/merge-a-linked-list-into-another-linked-list-at-alternate-positions/)  
+6. [Reverse A List In Groups Of Given Size](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)  
+7. [Union And Intersection Of 2 Linked Lists](https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/)  
+8. [Detect And Remove Loop In A Linked List](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)  
+9. [Merge Sort For Linked Lists](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)  
+10. [Select A Random Node from A Singly Linked List](https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/)
+
+**Dynamic Programming**
+
+1. [Longest Common Subsequence](https://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequence/)  
+2. [Longest Increasing Subsequence](https://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/)  
+3. [Edit Distance](https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/)  
+4. [Minimum Partition](https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/)  
+5. [Ways to Cover a Distance](https://www.geeksforgeeks.org/count-number-of-ways-to-cover-a-distance/)  
+6. [Longest Path In Matrix](https://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/)  
+7. [Subset Sum Problem](https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/)  
+8. [Optimal Strategy for a Game](https://www.geeksforgeeks.org/dynamic-programming-set-31-optimal-strategy-for-a-game/)  
+9. [0-1 Knapsack Problem](https://www.geeksforgeeks.org/dynamic-programming-set-10-0-1-knapsack-problem/)  
+10. [Boolean Parenthesization Problem](https://www.geeksforgeeks.org/dynamic-programming-set-37-boolean-parenthesization-problem/)
+
+**Sorting And Searching** 
+  
+
+1. [Binary Search](http://geeksquiz.com/binary-search/)  
+2. [Search an element in a sorted and rotated array](https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/)  
+3. [Bubble Sort](http://geeksquiz.com/bubble-sort/)  
+4. [Insertion Sort](http://geeksquiz.com/insertion-sort/)  
+5. [Merge Sort](http://geeksquiz.com/merge-sort/)  
+6. [Heap Sort (Binary Heap)](http://geeksquiz.com/heap-sort/)  
+7. [Quick Sort](http://geeksquiz.com/quick-sort/)  
+8. [Interpolation Search](https://www.geeksforgeeks.org/interpolation-search/)  
+9. [Find Kth Smallest/Largest Element In Unsorted Array](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/)  
+10. [Given a sorted array and a number x, find the pair in array whose sum is closest to x](http://geeksquiz.com/given-sorted-array-number-x-find-pair-array-whose-sum-closest-x/)
+
+**Tree / Binary Search Tree**
+
+1. [Find Minimum Depth of a Binary Tree](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/)  
+2. [Maximum Path Sum in a Binary Tree](https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/)  
+3. [Check if a given array can represent Preorder Traversal of Binary Search Tree](https://www.geeksforgeeks.org/check-if-a-given-array-can-represent-preorder-traversal-of-binary-search-tree/)  
+4. [Check whether a binary tree is a full binary tree or not](https://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)  
+5. [Bottom View Binary Tree](https://www.geeksforgeeks.org/bottom-view-binary-tree/)  
+6. [Print Nodes in Top View of Binary Tree](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)  
+7. [Remove nodes on root to leaf paths of length < K](https://www.geeksforgeeks.org/remove-nodes-root-leaf-paths-length-k/)  
+8. [Lowest Common Ancestor in a Binary Search Tree](https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/)  
+9. [Check if a binary tree is subtree of another binary tree](https://www.geeksforgeeks.org/check-binary-tree-subtree-another-binary-tree-set-2/)  
+10. [Reverse alternate levels of a perfect binary tree](https://www.geeksforgeeks.org/reverse-alternate-levels-binary-tree/)
+
+**Number Theory**
+
+1. [Modular Exponentiation](https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/)  
+2. [Modular multiplicative inverse](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/)  
+3. [Primality Test | Set 2 (Fermat Method)](https://www.geeksforgeeks.org/primality-test-set-2-fermet-method/)  
+4. [Euler’s Totient Function](https://www.geeksforgeeks.org/eulers-totient-function/)  
+5. [Sieve of Eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)  
+6. [Convex Hull](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)  
+7. [Basic and Extended Euclidean algorithms](https://www.geeksforgeeks.org/basic-and-extended-euclidean-algorithms/)  
+8. [Segmented Sieve](https://www.geeksforgeeks.org/segmented-sieve/)  
+9. [Chinese remainder theorem](https://www.geeksforgeeks.org/chinese-remainder-theorem-set-1-introduction/)  
+10. [Lucas Theorem](https://www.geeksforgeeks.org/compute-ncr-p-set-2-lucas-theorem/)
+
+**BIT Manipulation**
+
+1. [Maximum Subarray XOR](https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/)  
+2. [Magic Number](https://www.geeksforgeeks.org/find-nth-magic-number/)  
+3. [Sum of bit differences among all pairs](https://www.geeksforgeeks.org/sum-of-bit-differences-among-all-pairs/)  
+4. [Swap All Odds And Even Bits](https://www.geeksforgeeks.org/swap-all-odd-and-even-bits/)  
+5. [Find the element that appears once](https://www.geeksforgeeks.org/find-the-element-that-appears-once/)  
+6. [Binary representation of a given number](https://www.geeksforgeeks.org/binary-representation-of-a-given-number/)  
+7. [Count total set bits in all numbers from 1 to n](https://www.geeksforgeeks.org/count-total-set-bits-in-all-numbers-from-1-to-n/)  
+8. [Rotate bits of a number](https://www.geeksforgeeks.org/rotate-bits-of-an-integer/)  
+9. [Count number of bits to be flipped to convert A to B](https://www.geeksforgeeks.org/count-number-of-bits-to-be-flipped-to-convert-a-to-b/)  
+10. [Find Next Sparse Number](https://www.geeksforgeeks.org/given-a-number-find-next-sparse-number/)
+
+  
+  
+
+**String / Array**
+
+1. [Reverse an array without affecting special characters](https://www.geeksforgeeks.org/reverse-an-array-without-affecting-special-characters/)  
+2. [All Possible Palindromic Partitions](https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/)  
+3. [Count triplets with sum smaller than a given value](https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/)  
+4. [Convert array into Zig-Zag fashion](https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/)  
+5. [Generate all possible sorted arrays from alternate elements of two given sorted arrays](https://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/)  
+6. [Pythagorean Triplet in an array](https://www.geeksforgeeks.org/find-pythagorean-triplet-in-an-unsorted-array/)  
+7. [Length of the largest subarray with contiguous elements](https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-1/)  
+8. [Find the smallest positive integer value that cannot be represented as sum of any subset of a given array](https://www.geeksforgeeks.org/find-smallest-value-represented-sum-subset-given-array/)  
+9. [Smallest subarray with sum greater than a given value](https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/)  
+10. [Stock Buy Sell to Maximize Profit](https://www.geeksforgeeks.org/stock-buy-sell/)
