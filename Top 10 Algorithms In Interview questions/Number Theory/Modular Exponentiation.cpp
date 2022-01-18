@@ -22,7 +22,6 @@ long long power_with_mod(int x, int y, int p) {
 }
 
 int main() {
-
 	std::cout << power_with_mod(2, 3, 5) << std::endl;
 	std::cout << power_with_mod(2, 5, 13) << std::endl;
 }
