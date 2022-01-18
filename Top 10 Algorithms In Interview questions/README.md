@@ -147,7 +147,7 @@
 
 ### Number Theory
 
-1. [Modular Exponentiation](https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/) --- [**src**](https://github.com/hashnut/Algorithms_and_Languages/blob/main/Top%2010%20Algorithms%20In%20Interview%20questions/Number%20Theory/Modular%20Exponentiation.cpp)
+1. [Modular Exponentiation](https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/) ****************************** [**src**](https://github.com/hashnut/Algorithms_and_Languages/blob/main/Top%2010%20Algorithms%20In%20Interview%20questions/Number%20Theory/Modular%20Exponentiation.cpp)
 
 2. [Modular multiplicative inverse](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/)  
 
