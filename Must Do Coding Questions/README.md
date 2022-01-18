@@ -5,7 +5,7 @@
 
 ---
 
-**Topic :**
+### Topic :
 
 -   [Arrays](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#arrays)
 -   [String](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#string)
@@ -23,8 +23,7 @@
 -   [Backtracking](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#BT)
 -   [Bit Magic](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#bits)
 
-  
- 
+--- 
 
 ### Arrays
 
@@ -54,6 +53,8 @@
 
 **Solved the above?** [Go for some more Questions](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#More%20Questions%20on%20Arrays)
 
+--- 
+
 ### String
 
 1.  [Reverse words in a given string](https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string/0)
@@ -71,6 +72,9 @@
 13.  [Longest Common Prefix](https://practice.geeksforgeeks.org/problems/longest-common-prefix-in-an-array/0)
 
 **Solved the above?** [Go for some more Questions](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#More%20Questions%20on%20Strings)
+
+--- 
+
 
 ### Linked List
 
@@ -93,6 +97,9 @@
 17.  [Given a linked list of 0s, 1s and 2s, sort it](https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1)
 18.  [Delete without head pointer](https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1)
 
+--- 
+
+
 ### Stack and Queue
 
 1.  [Parenthesis Checker](https://practice.geeksforgeeks.org/problems/parenthesis-checker/0)
@@ -105,6 +112,8 @@
 8.  [First non-repeating character in a stream](https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream/0)
 9.  [Rotten Oranges](https://practice.geeksforgeeks.org/problems/rotten-oranges/0)
 10.  [Maximum of all subarrays of size k](https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0)
+
+--- 
 
 ### Tree
 
@@ -127,6 +136,8 @@
 
 **Solved the above?** [Go for some more Questions](https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#More%20Questions%20on%20Trees)
 
+--- 
+
 ### Heap
 
 1.  [Find median in a stream](https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0)
@@ -136,7 +147,13 @@
 5.  [Merge K sorted linked lists](https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1)
 6.  [Kth largest element in a stream](https://practice.geeksforgeeks.org/problems/kth-largest-element-in-a-stream/0)
 
+--- 
+
+
 ### Recursion
+
+--- 
+
 
 1.  [Flood fill Algorithm](https://practice.geeksforgeeks.org/problems/flood-fill-algorithm/0)
 2.  [Number of paths](https://practice.geeksforgeeks.org/problems/number-of-paths/0)
@@ -145,6 +162,9 @@
 5.  [Josephus problem](https://practice.geeksforgeeks.org/problems/josephus-problem/1)
 
 ### Hashing
+
+--- 
+
 
 1.  [Relative Sorting](https://practice.geeksforgeeks.org/problems/relative-sorting/0)
 2.  [Sorting Elements of an Array by Frequency](https://practice.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency/0)
@@ -166,7 +186,13 @@
 18.  [First element to occur k times](https://practice.geeksforgeeks.org/problems/first-element-to-occur-k-times/0)
 19.  [Check if frequencies can be equal](https://practice.geeksforgeeks.org/problems/check-frequencies/0)
 
+--- 
+
+
 ### Graph
+
+--- 
+
 
 1.  [Depth First Traversal](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)
 2.  [Breadth First Traversal](https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1)
@@ -185,7 +211,13 @@
 15.  [Alien Dictionary](https://practice.geeksforgeeks.org/problems/alien-dictionary/1)
 16.  [Snake and Ladder Problem](https://practice.geeksforgeeks.org/problems/snake-and-ladder-problem/0)
 
+--- 
+
+
 ### Greedy
+
+--- 
+
 
 1.  [Activity Selection](https://practice.geeksforgeeks.org/problems/activity-selection/0)
 2.  [N meetings in one room](https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0)
@@ -199,6 +231,9 @@
 10.  [Minimum Spanning Tree](https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1)
 11.  [Shop in Candy Store](https://practice.geeksforgeeks.org/problems/shop-in-candy-store/0)
 12.  [Geek collects the balls](https://practice.geeksforgeeks.org/problems/geek-collects-the-balls/0)
+
+--- 
+
 
 ### Dynamic Programming
 
@@ -223,6 +258,9 @@
 19.  [Optimal Strategy for a Game](https://practice.geeksforgeeks.org/problems/optimal-strategy-for-a-game/0)
 20.  [Shortest Common Supersequence](https://practice.geeksforgeeks.org/problems/shortest-common-supersequence/0)
 
+--- 
+
+
 ### Divide and Conquer
 
 1.  [Find the element that appears once in sorted array](https://practice.geeksforgeeks.org/problems/find-the-element-that-appears-once-in-sorted-array/0)
@@ -233,6 +271,9 @@
 6.  [Merge Sort](https://practice.geeksforgeeks.org/problems/merge-sort/1)
 7.  [K-th element of two sorted Arrays](https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array/0)
 
+--- 
+
+
 ### Backtracking
 
 1.  [N-Queen Problem](https://practice.geeksforgeeks.org/problems/n-queen-problem/0)
@@ -240,6 +281,9 @@
 3.  [Rat in a Maze Problem](https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1)
 4.  [Word Boggle](https://practice.geeksforgeeks.org/problems/word-boggle/0)
 5.  [Generate IP Addresses](https://practice.geeksforgeeks.org/problems/generate-ip-addresses/1)
+
+
+--- 
 
 ### Bit Magic
 
@@ -258,6 +302,9 @@
 13.  [Alone in a couple](https://practice.geeksforgeeks.org/problems/alone-in-couple/0)
 14.  [Maximum subset XOR](https://practice.geeksforgeeks.org/problems/maximum-subset-xor/1)
 
+--- 
+
+
 ### Some More Questions on Arrays
 
 1.  [Find Missing And Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating/0)
@@ -269,6 +316,9 @@
 7.  [Boolean Matrix Problem](https://practice.geeksforgeeks.org/problems/boolean-matrix-problem/0)
 8.  [Smallest Positive missing number](https://practice.geeksforgeeks.org/problems/smallest-positive-missing-number/0)
 9.  [Jumping Caterpillars](https://practice.geeksforgeeks.org/problems/jumping-caterpillars/0)
+
+--- 
+
 
 ### Some More Questions on Strings
 
@@ -286,6 +336,9 @@
 12.  [Geek and its Colored Strings](https://practice.geeksforgeeks.org/problems/geek-and-its-colored-strings/0)
 13.  [Second most repeated string in a sequence](https://practice.geeksforgeeks.org/problems/second-most-repeated-string-in-a-sequence/0)
 
+--- 
+
+
 ### Some more Questions on Trees
 
 1.  [Mirror Tree](https://practice.geeksforgeeks.org/problems/mirror-tree/1)
@@ -293,6 +346,8 @@
 3.  [Bottom View of Binary Tree](https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1)
 4.  [Lowest Common Ancestor in a Binary Tree](https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1)
 5.  [Binary to DLL](https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1)
+
+--- 
 
 **Important Links :**
 
