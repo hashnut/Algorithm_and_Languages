@@ -1,8 +1,8 @@
 # Top 10 algorithms in Interview Questions
 
--   Difficulty Level : [Medium](https://www.geeksforgeeks.org/medium/)
 
 ### My solution file is added as '[src]()' at the end of the topic
+-   Difficulty Level : [Medium](https://www.geeksforgeeks.org/medium/)
 
 <br></br>
 ---
