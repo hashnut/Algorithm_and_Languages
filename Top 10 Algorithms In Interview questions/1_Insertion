@@ -1,0 +1,89 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <memory>
+#include <iostream>
+
+struct Node {
+    int data;
+    Node* next;
+    Node(int data) : data{data}, next{nullptr} {}
+};
+
+struct List {
+    List() : head{nullptr} {}
+    
+    void insert(int x) {
+        Node* newNode = new Node(x);
+        
+        if (!head) {
+            head = std::move(newNode);
+            return;
+        }
+        
+        if (head->data > x) {
+            newNode->next = head;
+            head = std::move(newNode);
+            return;
+        }
+
+        Node* prev = head;
+        Node* cur = head->next;
+        
+        while (cur) {
+            if (cur->data < x) {
+                cur = cur->next;
+                prev = prev->next;
+            } else {
+                break;
+            }
+        }
+        
+        newNode->next = cur;
+        prev->next = newNode;
+    }
+    
+    friend std::ostream& operator<<(std::ostream &os, const List &list);
+    
+private:
+    Node* head;
+};
+
+std::ostream& operator<<(std::ostream &os, const List &list) {
+    Node* temp = list.head;
+    
+    while (temp) {
+        os << temp->data << " ";
+        temp = temp->next;
+    }
+    os << std::endl;
+    
+    return os;
+}
+
+int main()
+{
+    List l;
+    
+    l.insert(3);
+    l.insert(5);
+    l.insert(1);
+    l.insert(2);
+    l.insert(4);
+    l.insert(7);
+    l.insert(8);
+    l.insert(6);
+    
+    std::cout << l;
+    
+    return 0;
+}
+
+
+
