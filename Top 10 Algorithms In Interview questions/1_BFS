@@ -1,0 +1,68 @@
+#include <iostream>
+#include <list>
+#include <queue>
+
+using namespace std;
+
+class Graph {
+  
+ int N;
+ list<int>* g;
+  
+public:
+  
+  Graph(int n) : N(n) {
+      g = new list<int>[n];
+  }
+  
+  void addEdge(int i, int j) {
+      g[i].push_back(j);
+      //g[j].push_back(i);
+  }
+  
+  void BFS(int s);
+  
+  ~Graph() { delete g; }
+};
+
+void Graph::BFS(int s) {
+    queue<int> q;
+    bool visit[N];
+    for (auto b : visit) b = false;
+    
+    q.push(s);
+    
+    int cur;
+    
+    while (!q.empty()) {
+        
+        cur = q.front();
+        visit[cur] = true;
+        q.pop();
+        
+        cout << cur;
+        for (int next : g[cur]) {
+            if (!visit[next]) {
+                q.push(next);
+            }
+        }
+    }
+    cout << endl;
+}
+
+int main() {
+     // Create a graph given in the above diagram
+    Graph g(4);
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 2);
+    g.addEdge(2, 0);
+    g.addEdge(2, 3);
+    g.addEdge(3, 3);
+
+    cout << "Following is Breadth First Traversal "
+         << "(starting from vertex 2) \n";
+    g.BFS(2);
+
+    return 0;
+}
