@@ -1,0 +1,90 @@
+#include <iostream>
+#include <queue>
+
+struct TreeNode {
+  int data;
+  TreeNode* left;
+  TreeNode* right;
+  
+  TreeNode(int _data) : data(_data), left(nullptr), right(nullptr) {}
+};
+
+
+class BST {
+ 
+  TreeNode* root;
+ 
+public:
+  BST() : root{nullptr} {}
+  BST(TreeNode* node) : root(node) {}
+    
+  void insert(int x) {
+    TreeNode* newNode = new TreeNode(x);
+    
+    if (!root) {
+      root = newNode;
+      return;
+    }
+    
+    TreeNode* temp = root;
+    while (temp) {
+
+      if (temp->data < x) {
+        if (!temp->right) {
+          temp->right = newNode;
+          return;
+        }
+        temp = temp->right;
+      }
+
+      else {
+        if (!temp->left) {
+          temp->left = newNode;
+          return;
+        }
+        temp = temp->left;
+      }
+    }
+    
+    
+  } // insert over
+  
+  int minimum_depth() {
+    std::queue<std::pair<TreeNode*, int>> q;
+    q.push(std::make_pair(root, 1));
+  
+    std::pair<TreeNode*, int> cur;
+    int ans = 1;
+    
+    while(!q.empty()) {
+      cur = q.front();
+      if (!cur.first->left && !cur.first->right) {
+        return cur.second;
+      }
+      q.pop();
+    
+      if (cur.first->left) 
+        q.push(std::make_pair(cur.first->left, cur.second+1));
+      if (cur.first->right) 
+        q.push(std::make_pair(cur.first->left, cur.second+1));
+    }
+    
+    return ans;
+  }
+  
+  
+};
+
+int main() {
+  BST t;
+
+  t.insert(3);
+  t.insert(2);
+  t.insert(5);
+  t.insert(6);
+  t.insert(4);
+  // t.insert(1); // unindent -> 3
+  
+  std::cout << t.minimum_depth() << std::endl;
+
+}
