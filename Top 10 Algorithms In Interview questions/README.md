@@ -27,7 +27,7 @@
 
 ### Graph
 
-1. [Breadth First Search (BFS)](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)  
+1. [Breadth First Search (BFS)](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) ****************************** [**src**](https://github.com/hashnut/Algorithms_and_Languages/blob/main/Top%2010%20Algorithms%20In%20Interview%20questions/Graph/1_BFS)  
 
 2. [Depth First Search (DFS)](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)  
 
@@ -51,7 +51,7 @@
 
 ### Linked List
 
-1. [Insertion of a node in Linked List (On the basis of some constraints)](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/)  
+1. [Insertion of a node in Linked List (On the basis of some constraints)](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/) ****************************** [**src**](https://github.com/hashnut/Algorithms_and_Languages/blob/main/Top%2010%20Algorithms%20In%20Interview%20questions/Linked%20List/1_Insertion)  
 
 2. [Delete a given node in Linked List (under given constraints)](https://www.geeksforgeeks.org/delete-a-given-node-in-linked-list-under-given-constraints/)  
 
@@ -99,7 +99,7 @@
 
 ### Sorting And Searching
 
-1. [Binary Search](http://geeksquiz.com/binary-search/)  
+1. [Binary Search](http://geeksquiz.com/binary-search/) ****************************** [**src**](https://github.com/hashnut/Algorithms_and_Languages/blob/main/Top%2010%20Algorithms%20In%20Interview%20questions/Sorting%20And%20Searching/1_Binary_Search)
 
 2. [Search an element in a sorted and rotated array](https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/)  
 
@@ -123,7 +123,7 @@
 
 ### Tree / Binary Search Tree
 
-1. [Find Minimum Depth of a Binary Tree](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/)  
+1. [Find Minimum Depth of a Binary Tree](https://www.geeksforgeeks.org/find-minimum-depth-of-a-binary-tree/) ****************************** [**src**](https://github.com/hashnut/Algorithms_and_Languages/blob/main/Top%2010%20Algorithms%20In%20Interview%20questions/Tree%20And%20Binary%20Search%20Tree/1_Find_Minimum_Depth_of_a_Binary_Tree)
 
 2. [Maximum Path Sum in a Binary Tree](https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/)  
 
