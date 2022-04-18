@@ -51,8 +51,8 @@ Reference is a nickname. Therefore it cannot be used alone, it needs original na
 ### 10. C++ STL
 - [1. C++ STL - Sequence Container](https://koreanfoodie.me/892)
 - [2. C++ STL - Associative Container](https://koreanfoodie.me/893)
-- [3. C++ STL - Algorithm](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/10-3.cpp)
-- [4. C++ STL - string and string_view](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/10-4.cpp)
+- [3. C++ STL - Algorithm](https://koreanfoodie.me/935)
+- [4. C++ STL - string and string_view](https://koreanfoodie.me/936)
 
 ### 11. Exception Handling
 - [C++ Exception Handling](https://github.com/hashnut/Algorithms_and_Languages/blob/main/CPP_Review/codes/11-1.cpp)
